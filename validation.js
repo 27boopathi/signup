@@ -48,23 +48,22 @@ alert("password and comfirm password not match");
       }
 
   }
-  function profile(){
+  function profile()
+  {
     var empname=$('#empname').val();
     var empid=$('#empid').val();
     var empphone=$('#empphone').val();
     var addr=$('#empaddr').val();
     var salary=$('#empsal').val();
 var crosspay=salary*12;
-
-$("#details").append('<li type="none">Employee Name is:-'+empname+'</li>')
-$("#details").append('<li type="none">Employee ID is:-'+empid+'</li>')
-$("#details").append('<li type="none">Employee Mobile Number:-'+empphone+'</li>')
-$("#details").append('<li type="none">Employee Address is:-'+addr+'</li>')
-$("#details").append('<li type="none">Employee Salary is:-'+salary+'</li>')
-$("#details").append('<li type="none">Employee Crosspay is :-'+crosspay+'</li>');
-
-  }
-function ValidateEmail(mail) {
+console.log(crosspay);
+$("#detailss").append('<tr><td>'+empname+'<td>')
+$("#detailss").append('<td>'+empid+'<td>')
+$("#detailss").append('<td>'+empphone+'<td>')
+$("#detailss").append('<td>'+addr+'<td>')
+$("#detailss").append('<td>'+salary+'<td>')
+$("#detailss").append('<td>'+crosspay+'<td></tr><br/>');
+}function ValidateEmail(mail) {
     var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
     return expr.test(mail);
 };
